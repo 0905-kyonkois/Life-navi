@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f4f5f9"><title>生活ナビ v0.26</title><link rel="manifest" href="manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="生活ナビ"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f4f5f9"><title>生活ナビ v0.27</title><link rel="manifest" href="manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="生活ナビ"><style>
 :root{--bg:#f4f5f9;--card:#fff;--ink:#17181c;--muted:#888c96;--soft:#eceef3}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif}.app{max-width:500px;margin:auto;min-height:100vh;padding:18px 18px 100px}.top{display:flex;justify-content:space-between;align-items:center}.brand{font-size:16px;font-weight:850}.version{font-size:11px;color:var(--muted);font-weight:700;margin-left:7px}.iconbtn{border:0;background:#fff;border-radius:14px;padding:11px 13px;font-weight:800;box-shadow:0 4px 18px #1111}.hero{text-align:center;padding:30px 0 22px}.clock{font-family:"Hiragino Sans",sans-serif;font-size:clamp(58px,17vw,80px);font-weight:700;letter-spacing:-5px;line-height:1}.date{margin-bottom:10px;color:#5f636d;font-weight:700;font-size:17px}.count-label{margin-top:30px;font-size:13px;color:var(--muted);font-weight:800}.countdown{display:flex;align-items:baseline;justify-content:center;gap:.16em;margin-top:5px;line-height:1}.count-small{font-family:"Hiragino Sans",sans-serif;font-size:clamp(17px,5vw,24px);font-weight:700;letter-spacing:0}.count-number{font-family:"Hiragino Sans",sans-serif;font-size:clamp(46px,14vw,66px);font-weight:700;letter-spacing:-.055em;font-variant-numeric:tabular-nums}.count-seconds{font-family:"Hiragino Sans",sans-serif;font-size:clamp(40px,12vw,58px);font-weight:700;letter-spacing:-.045em;font-variant-numeric:tabular-nums}.card{background:#fff;border-radius:24px;padding:20px;box-shadow:0 7px 28px #1419280e;margin-bottom:14px}.eyebrow{font-size:12px;font-weight:850;color:var(--muted);letter-spacing:.06em}.now-title{font-size:25px;font-weight:900;margin:7px 0 4px}.sub{font-size:13px;color:var(--muted)}.progress{height:7px;background:var(--soft);border-radius:99px;overflow:hidden;margin:16px 0 0}.bar{height:100%;background:#17181c;border-radius:99px}.focus{width:100%;border:0;border-radius:18px;background:#17181c;color:white;padding:16px;font-weight:850;font-size:15px;margin:2px 0 18px}.section{font-size:18px;font-weight:900;margin:24px 3px 4px}.daynav{display:flex;align-items:center;justify-content:space-between;margin:24px 3px 10px}.daynav .section{margin:0}.daybtn{width:44px;height:44px;border:0;border-radius:14px;background:#fff;font-size:28px;font-weight:800;box-shadow:0 4px 16px #1111}.dayhint{font-size:11px;color:#999;font-weight:700;margin-top:3px}.shiftbox{background:#f7f7f9;border-radius:14px;padding:10px;margin-top:10px;font-size:12px;font-weight:700}.shiftbox button{border:1px solid #ddd;background:#fff;border-radius:10px;padding:8px 10px;margin:6px 4px 0 0;font-weight:800}.shiftbox button.active{background:#17181c;color:#fff;border-color:#17181c}.item{display:grid;grid-template-columns:58px 1fr 34px;gap:8px;align-items:center;padding:14px 2px;border-bottom:1px solid #eee}.item:last-child{border:0}.it{font-size:13px;font-weight:800;color:#666}.in{font-weight:800}.check{width:28px;height:28px;border-radius:50%;border:1.5px solid #d3d5db;background:#fff}.done .in{text-decoration:line-through;color:#aaa}.done .check{background:#17181c;color:#fff}.settings{position:fixed;inset:0;background:#f4f5f9;z-index:20;padding:24px;display:none}.settings.open{display:block}.settings h2{margin:20px 0}.settingrow{background:white;border-radius:18px;padding:18px;display:flex;justify-content:space-between;align-items:center;font-weight:800}.switch{width:52px;height:30px;background:#ddd;border:0;border-radius:99px;padding:3px}.switch span{display:block;width:24px;height:24px;background:#fff;border-radius:50%;transition:.2s}.switch.on{background:#17181c}.switch.on span{transform:translateX(22px)}
 #focusView{position:fixed;inset:0;background:#0d0e11;color:#fff;z-index:99;display:none;overflow:hidden}#focusView.show{display:block}.fclock{position:absolute;left:4vw;top:3vh;font-size:clamp(22px,4vw,48px);font-weight:700}.exit{position:fixed;right:max(18px,3vw);top:max(18px,3vh);z-index:9999;border:0;background:#ffffff22;color:#fff;border-radius:99px;width:52px;height:52px;font-size:24px;cursor:pointer;touch-action:manipulation;pointer-events:auto}.fcenter{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;transform:translateY(-2vh)}.fname{font-size:clamp(22px,4vw,54px);font-weight:800;opacity:.82;margin-bottom:1vh}.fremain{font-family:"Hiragino Sans",sans-serif;font-size:clamp(64px,14vw,168px);font-weight:700;letter-spacing:-.05em;line-height:1}.flabel{font-size:clamp(13px,2vw,24px);opacity:.45;margin-top:1vh}.fnext{position:absolute;bottom:4vh;width:100%;text-align:center;font-size:clamp(14px,2vw,25px);opacity:.55;font-weight:700}.deadline-card{border:1px solid #e6c8c5;background:#fff5f4;box-shadow:0 7px 28px #7f29210b}.deadline-head{color:#7d3e39}.deadline-card.urgent{background:#fcecea;border-color:#dfb2ad}.deadline-card.critical{background:#f8dfdc;border-color:#d49790}.deadline-card.overdue{background:#f4d8d5;border-color:#c77d74}.deadline-card .deadline-badge{background:#f2deda;color:#7d3e39}.deadline-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.deadline-title{font-size:18px;font-weight:900}.deadline-badge{font-size:11px;font-weight:850;background:#f1f2f5;border-radius:99px;padding:6px 9px;white-space:nowrap}.deadline-item{padding:12px 0;border-bottom:1px solid #eee}.deadline-item:last-child{border:0}.deadline-name{font-weight:850}.deadline-meta{font-size:12px;color:var(--muted);margin-top:4px}.deadline-empty{font-size:13px;color:var(--muted);padding-top:10px}.empty{text-align:center;color:#999;padding:16px}@media(orientation:portrait){
 #focusView.show.force-landscape{width:100vh;height:100vw;inset:auto;left:0;top:0;transform-origin:top left;transform:rotate(90deg) translateY(-100%)}
@@ -16,7 +16,7 @@
 @media(orientation:landscape) and (max-height:600px){#focusView .fclock{top:max(12px,env(safe-area-inset-top));left:max(16px,env(safe-area-inset-left));font-size:clamp(22px,5vh,34px)}#focusView .exit{right:max(14px,env(safe-area-inset-right));top:max(12px,env(safe-area-inset-top));width:48px;height:48px}.fcenter{transform:none}.fname{font-size:clamp(20px,7vh,38px);margin-bottom:1vh}.fremain{font-size:clamp(64px,24vh,128px)}.flabel{font-size:clamp(12px,4vh,19px)}.fnext{bottom:max(12px,env(safe-area-inset-bottom));font-size:clamp(13px,4vh,20px);padding:0 70px}}
 
 .deadline-card{cursor:pointer}.deadline-more{margin-top:12px;font-size:12px;font-weight:850;color:#7d3e39;text-align:right}.deadline-place{display:inline-block;margin-left:6px;font-weight:800;color:#666}.tasks-panel{position:fixed;inset:0;background:#f4f5f9;z-index:30;display:none;overflow:auto}.tasks-panel.open{display:block}.tasks-wrap{max-width:500px;margin:auto;padding:calc(18px + env(safe-area-inset-top)) 18px calc(70px + env(safe-area-inset-bottom))}.tasks-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.tasks-title{font-size:24px;font-weight:900}.task-card{background:#fff;border-radius:18px;padding:16px;margin-bottom:10px;box-shadow:0 5px 20px #1419280b}.task-card.completed{opacity:.55}.task-row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.task-name{font-size:16px;font-weight:900;flex:1;min-width:0;overflow-wrap:anywhere}.task-due{font-size:12px;font-weight:850;flex:0 0 auto;max-width:48%;white-space:normal;text-align:right;line-height:1.45}.task-meta{font-size:12px;color:var(--muted);margin-top:7px;line-height:1.55}.task-status{margin-top:10px;border:0;border-radius:11px;padding:9px 12px;font-weight:850;background:#f0f1f4}.task-status.done{background:#17181c;color:#fff}.tasks-subhead{font-size:13px;font-weight:900;color:#777;margin:20px 3px 9px}.task-empty{color:#999;text-align:center;padding:25px 0}
-</style></head><body><main class="app"><div class="top"><div class="brand">生活ナビ <span class="version">v0.26</span></div><button class="iconbtn" id="settingsBtn">⚙ 設定</button></div><section class="hero"><div class="date" id="date"></div><div class="clock" id="clock"></div><div class="count-label" id="countLabel">次の予定まで</div><div class="countdown" id="countdown">--</div></section><section class="card deadline-card" id="deadlineCard" role="button" tabindex="0"><div class="deadline-head"><div class="deadline-title">📌 締切・重要</div><div class="deadline-badge" id="deadlineCount">0件</div></div><div id="deadlines"></div><div class="deadline-more">全件を見る ＞</div></section><section class="card"><div class="eyebrow">NOW · 今やること</div><div class="now-title" id="nowTitle"></div><div class="sub" id="nowSub"></div><div class="progress"><div class="bar" id="bar"></div></div></section><button class="focus" id="focusBtn">↔ 横全画面で集中する</button><div class="daynav"><button class="daybtn" id="prevDay">‹</button><div><div class="section" id="dayTitle">今日の予定</div><div class="dayhint" id="dayHint"></div></div><button class="daybtn" id="nextDay">›</button></div><section class="card" id="list"></section><div id="shiftBox"></div></main>
+</style></head><body><main class="app"><div class="top"><div class="brand">生活ナビ <span class="version">v0.27</span></div><button class="iconbtn" id="settingsBtn">⚙ 設定</button></div><section class="hero"><div class="date" id="date"></div><div class="clock" id="clock"></div><div class="count-label" id="countLabel">次の予定まで</div><div class="countdown" id="countdown">--</div></section><section class="card deadline-card" id="deadlineCard" role="button" tabindex="0"><div class="deadline-head"><div class="deadline-title">📌 締切・重要</div><div class="deadline-badge" id="deadlineCount">0件</div></div><div id="deadlines"></div><div class="deadline-more">全件を見る ＞</div></section><section class="card"><div class="eyebrow">NOW · 今やること</div><div class="now-title" id="nowTitle"></div><div class="sub" id="nowSub"></div><div class="progress"><div class="bar" id="bar"></div></div></section><button class="focus" id="focusBtn">↔ 横全画面で集中する</button><div class="daynav"><button class="daybtn" id="prevDay">‹</button><div><div class="section" id="dayTitle">今日の予定</div><div class="dayhint" id="dayHint"></div></div><button class="daybtn" id="nextDay">›</button></div><section class="card" id="list"></section><div id="shiftBox"></div></main>
 <div class="tasks-panel" id="tasksPanel"><div class="tasks-wrap"><div class="tasks-top"><div class="tasks-title">📌 締切・重要</div><button class="iconbtn" id="closeTasks">× 閉じる</button></div><div id="allTasks"></div></div></div>
 <div class="settings" id="settings"><button class="iconbtn" id="closeSettings">← 戻る</button><h2>設定</h2><div class="settingrow"><span>時計に秒を表示</span><button class="switch" id="secondsSwitch"><span></span></button></div></div>
 <div id="focusView"><div class="fclock" id="fclock"></div><button class="exit" id="exitFocus">×</button><div class="fcenter"><div class="fname" id="fname"></div><div class="fremain" id="fremain"></div><div class="flabel" id="flabel">残り時間</div></div><div class="fnext" id="fnext"></div></div>
@@ -29,8 +29,8 @@ const week={
 {name:'生活ナビ制作②',start:'18:30',end:'19:10'},
 {name:'配信準備',start:'19:10',end:'19:25'},
 {name:'配信',start:'19:25',end:'21:00'},
-{name:'夕食',start:'21:00',end:'22:00'},
-{name:'工学基礎実験 復習',start:'22:00',end:'22:30'}],
+{name:'工学基礎実験 復習',start:'21:00',end:'22:00'},
+{name:'夕食',start:'22:00',end:'23:00'}],
 '2026-10-08':[
 {name:'起床',start:'10:30',end:'10:45'},
 {name:'朝食・身支度',start:'10:45',end:'11:50'},
@@ -39,10 +39,12 @@ const week={
 {name:'現代社会の基礎知識Ⅱ',start:'13:20',end:'15:00'},
 {name:'物質と環境の科学（遠隔）',start:'15:10',end:'16:50'},
 {name:'帰宅',start:'16:50',end:'18:10'},
-{name:'夕食・休憩',start:'18:10',end:'19:10'},
+{name:'休憩',start:'18:10',end:'19:10'},
 {name:'物理 授業前・授業後課題',start:'19:10',end:'20:10'},
 {name:'数学Ⅱ 理解度テスト・確認',start:'20:20',end:'20:50'},
-{name:'自由時間',start:'20:50',end:'23:30'},
+{name:'自由時間',start:'20:50',end:'22:00'},
+{name:'夕食',start:'22:00',end:'23:00'},
+{name:'自由時間',start:'23:00',end:'23:30'},
 {name:'就寝準備',start:'23:30',end:'23:50'},
 {name:'就寝',start:'23:50',end:'23:59'}],
 '2026-10-09':[
@@ -57,8 +59,9 @@ const week={
 {name:'休憩',start:'14:30',end:'15:00'},
 {name:'バイト シフト提出',start:'15:00',end:'15:15'},
 {name:'自由・制作',start:'15:15',end:'18:00'},
-{name:'夕食',start:'18:00',end:'19:00'},
-{name:'自由時間',start:'19:00',end:'23:30'},
+{name:'自由時間',start:'18:00',end:'22:00'},
+{name:'夕食',start:'22:00',end:'23:00'},
+{name:'自由時間',start:'23:00',end:'23:30'},
 {name:'就寝準備',start:'23:30',end:'23:50'},
 {name:'就寝',start:'23:50',end:'23:59'}],
 '2026-10-10':[],
@@ -71,11 +74,11 @@ const week={
 {name:'休憩',start:'14:20',end:'15:00'},
 {name:'数学Ⅱ 復習',start:'15:00',end:'15:45'},
 {name:'自由・制作',start:'15:45',end:'18:00'},
-{name:'夕食',start:'18:00',end:'19:00'},
-{name:'10/12 イベント準備・持ち物確認',start:'19:00',end:'19:30'},
+{name:'10/12 イベント準備・持ち物確認',start:'18:00',end:'18:30'},
 {name:'翌週の課題・締切確認',start:'20:00',end:'20:30'},
 {name:'翌週の週間予定確認',start:'20:30',end:'21:00'},
-{name:'自由時間',start:'21:00',end:'23:00'},
+{name:'自由時間',start:'21:00',end:'22:00'},
+{name:'夕食',start:'22:00',end:'23:00'},
 {name:'就寝準備',start:'23:00',end:'23:20'},
 {name:'就寝',start:'23:20',end:'23:59'}],
 '2026-10-12':[
@@ -100,9 +103,9 @@ const week={
 {name:'齊藤京子BDイベント 2部',start:'18:00',end:'19:00'},
 {name:'会場退出・余韻タイム・帰宅準備',start:'19:00',end:'19:30'},
 {name:'帰宅',start:'19:30',end:'20:48'},
-{name:'夕食',start:'20:50',end:'21:20'},
-{name:'PC・Teams確認',start:'21:20',end:'21:30'},
-{name:'メディアプログラミングⅡ・演習課題',start:'21:30',end:'23:00'},
+{name:'PC・Teams確認',start:'20:50',end:'21:00'},
+{name:'メディアプログラミングⅡ・演習課題',start:'21:00',end:'22:00'},
+{name:'夕食',start:'22:00',end:'23:00'},
 {name:'成績課題 ※締切次第',start:'23:00',end:'23:59'}
 ]
 };
@@ -125,7 +128,7 @@ let selectedDate=localStorage.getItem('lifeNaviSelectedDate')||bootToday;
 if(lastRealDate!==bootToday){selectedDate=bootToday;localStorage.setItem('lifeNaviSelectedDate',bootToday);localStorage.setItem('lifeNaviLastRealDate',bootToday)}
 if(selectedDate<WEEK_START||selectedDate>WEEK_END)selectedDate=(bootToday>=WEEK_START&&bootToday<=WEEK_END)?bootToday:WEEK_START;
 let shift=localStorage.getItem('lifeNaviSaturdayShift')||'B';
-function shiftItems(){return shift==='A'?[{name:'起床',start:'08:00',end:'08:15'},{name:'朝食・身支度',start:'08:15',end:'09:00'},{name:'出発・バイトへ移動',start:'09:30',end:'11:00'},{name:'バイト',start:'11:00',end:'17:00'},{name:'帰宅（移動1時間30分）',start:'17:00',end:'18:30'},{name:'夕食',start:'18:30',end:'19:00'},{name:'自由時間',start:'19:00',end:'23:30'},{name:'就寝準備',start:'23:30',end:'23:50'},{name:'就寝',start:'23:50',end:'23:59'}]:[{name:'起床',start:'09:30',end:'09:45'},{name:'身支度',start:'09:45',end:'10:30'},{name:'昼食・出発準備',start:'10:30',end:'11:20'},{name:'出発・バイトへ移動',start:'11:20',end:'12:50'},{name:'到着・出勤準備',start:'12:50',end:'13:00'},{name:'バイト',start:'13:00',end:'22:30'},{name:'帰宅（0:00ごろ到着）',start:'22:30',end:'23:59'}]}
+function shiftItems(){return shift==='A'?[{name:'起床',start:'08:00',end:'08:15'},{name:'朝食・身支度',start:'08:15',end:'09:00'},{name:'出発・バイトへ移動',start:'09:30',end:'11:00'},{name:'バイト',start:'11:00',end:'17:00'},{name:'帰宅（移動1時間30分）',start:'17:00',end:'18:30'},{name:'自由時間',start:'18:30',end:'22:00'},{name:'夕食',start:'22:00',end:'23:00'},{name:'自由時間',start:'23:00',end:'23:30'},{name:'就寝準備',start:'23:30',end:'23:50'},{name:'就寝',start:'23:50',end:'23:59'}]:[{name:'起床',start:'09:30',end:'09:45'},{name:'身支度',start:'09:45',end:'10:30'},{name:'昼食・出発準備',start:'10:30',end:'11:20'},{name:'出発・バイトへ移動',start:'11:20',end:'12:50'},{name:'到着・出勤準備',start:'12:50',end:'13:00'},{name:'バイト',start:'13:00',end:'22:30'},{name:'帰宅（0:00ごろ到着）',start:'22:30',end:'23:59'}]}
 week['2026-10-10']=shiftItems();
 let showSeconds=localStorage.getItem('lifeNaviSeconds')==='1';
 const $=x=>document.getElementById(x),sec=t=>{let[a,b]=t.split(':').map(Number);return a*3600+b*60},pad=n=>String(n).padStart(2,'0');
