@@ -1,4 +1,4 @@
-const CACHE = 'life-navi-v0.20';
+const CACHE = 'life-navi-v0.22';
 const ASSETS = ['./manifest.webmanifest'];
 
 self.addEventListener('install', event => {
