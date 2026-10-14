@@ -1,4 +1,4 @@
-const CACHE = 'life-navi-v044';
+const CACHE = 'life-navi-v046';
 const ASSETS = ['./manifest.webmanifest'];
 
 self.addEventListener('install', event => {
@@ -32,4 +32,14 @@ self.addEventListener('fetch', event => {
       })
       .catch(() => caches.match(event.request))
   );
+});
+
+self.addEventListener('push', event => {
+ let payload={title:'📚 生活ナビ',body:'確認したい課題があります'};
+ try {payload={...payload,...event.data.json()}}catch(e){}
+ event.waitUntil(self.registration.showNotification(payload.title,{body:payload.body,tag:payload.tag||'life-navi',icon:'./icon-192.png',badge:'./icon-192.png',data:{url:payload.url||'./index.html'}}));
+});
+self.addEventListener('notificationclick', event => {
+ event.notification.close();
+ event.waitUntil((async()=>{const url=new URL(event.notification.data?.url||'./index.html',self.registration.scope).href;const clientsList=await clients.matchAll({type:'window',includeUncontrolled:true});for(const client of clientsList){if(client.url.startsWith(self.registration.scope)){await client.focus();return}}await clients.openWindow(url)})());
 });
