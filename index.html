@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f4f5f9"><title>生活ナビ v0.40</title><link rel="manifest" href="manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="生活ナビ"><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f4f5f9"><title>生活ナビ v0.44</title><link rel="manifest" href="manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="生活ナビ"><style>
 :root{--bg:#f4f5f9;--card:#fff;--ink:#17181c;--muted:#888c96;--soft:#eceef3}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif}.app{max-width:500px;margin:auto;min-height:100vh;padding:18px 18px 100px}.top{display:flex;justify-content:space-between;align-items:center}.brand{font-size:16px;font-weight:850}.version{font-size:11px;color:var(--muted);font-weight:700;margin-left:7px}.iconbtn{border:0;background:#fff;border-radius:14px;padding:11px 13px;font-weight:800;box-shadow:0 4px 18px #1111}.hero{text-align:center;padding:30px 0 22px}.clock{font-family:"Hiragino Sans",sans-serif;font-size:clamp(58px,17vw,80px);font-weight:700;letter-spacing:-5px;line-height:1}.date{margin-bottom:10px;color:#5f636d;font-weight:700;font-size:17px}.count-label{margin-top:30px;font-size:13px;color:var(--muted);font-weight:800}.countdown{display:flex;align-items:baseline;justify-content:center;gap:.16em;margin-top:5px;line-height:1}.count-small{font-family:"Hiragino Sans",sans-serif;font-size:clamp(17px,5vw,24px);font-weight:700;letter-spacing:0}.count-number{font-family:"Hiragino Sans",sans-serif;font-size:clamp(46px,14vw,66px);font-weight:700;letter-spacing:-.055em;font-variant-numeric:tabular-nums}.count-seconds{font-family:"Hiragino Sans",sans-serif;font-size:clamp(40px,12vw,58px);font-weight:700;letter-spacing:-.045em;font-variant-numeric:tabular-nums}.card{background:#fff;border-radius:24px;padding:20px;box-shadow:0 7px 28px #1419280e;margin-bottom:14px}.eyebrow{font-size:12px;font-weight:850;color:var(--muted);letter-spacing:.06em}.now-title{font-size:25px;font-weight:900;margin:7px 0 4px}.sub{font-size:13px;color:var(--muted)}.progress{height:7px;background:var(--soft);border-radius:99px;overflow:hidden;margin:16px 0 0}.bar{height:100%;background:#17181c;border-radius:99px}.focus{width:100%;border:0;border-radius:18px;background:#17181c;color:white;padding:16px;font-weight:850;font-size:15px;margin:2px 0 18px}.section{font-size:18px;font-weight:900;margin:24px 3px 4px}.daynav{display:flex;align-items:center;justify-content:space-between;margin:24px 3px 10px}.daynav .section{margin:0}.daybtn{width:44px;height:44px;border:0;border-radius:14px;background:#fff;font-size:28px;font-weight:800;box-shadow:0 4px 16px #1111}.dayhint{font-size:11px;color:#999;font-weight:700;margin-top:3px}.shiftbox{background:#f7f7f9;border-radius:14px;padding:10px;margin-top:10px;font-size:12px;font-weight:700}.shiftbox button{border:1px solid #ddd;background:#fff;border-radius:10px;padding:8px 10px;margin:6px 4px 0 0;font-weight:800}.shiftbox button.active{background:#17181c;color:#fff;border-color:#17181c}.item{display:grid;grid-template-columns:58px 1fr 34px;gap:8px;align-items:center;padding:14px 2px;border-bottom:1px solid #eee}.item:last-child{border:0}.it{font-size:13px;font-weight:800;color:#666;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.in{font-weight:800}.check{width:28px;height:28px;border-radius:50%;border:1.5px solid #d3d5db;background:#fff}.done .in{text-decoration:line-through;color:#aaa}.done .check{background:#17181c;color:#fff}.settings{position:fixed;inset:0;background:#f4f5f9;z-index:20;padding:24px;display:none}.settings.open{display:block}.settings h2{margin:20px 0}.settingrow{background:white;border-radius:18px;padding:18px;display:flex;justify-content:space-between;align-items:center;font-weight:800}.switch{width:52px;height:30px;background:#ddd;border:0;border-radius:99px;padding:3px}.switch span{display:block;width:24px;height:24px;background:#fff;border-radius:50%;transition:.2s}.switch.on{background:#17181c}.switch.on span{transform:translateX(22px)}
 #focusView{position:fixed;inset:0;background:#0d0e11;color:#fff;z-index:99;display:none;overflow:hidden}#focusView.show{display:block}.fclock{position:absolute;left:4vw;top:3vh;font-size:clamp(22px,4vw,48px);font-weight:700}.exit{position:fixed;right:max(18px,3vw);top:max(18px,3vh);z-index:9999;border:0;background:#ffffff22;color:#fff;border-radius:99px;width:52px;height:52px;font-size:24px;cursor:pointer;touch-action:manipulation;pointer-events:auto}.fcenter{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;transform:translateY(-2vh)}.fname{font-size:clamp(22px,4vw,54px);font-weight:800;opacity:.82;margin-bottom:1vh}.fremain{font-family:"Hiragino Sans",sans-serif;font-size:clamp(64px,14vw,168px);font-weight:700;letter-spacing:-.05em;line-height:1}.flabel{font-size:clamp(13px,2vw,24px);opacity:.45;margin-top:1vh}.fnext{position:absolute;bottom:4vh;width:100%;text-align:center;font-size:clamp(14px,2vw,25px);opacity:.55;font-weight:700}.deadline-card{border:1px solid #e6c8c5;background:#fff5f4;box-shadow:0 7px 28px #7f29210b}.deadline-head{color:#7d3e39}.deadline-card.urgent{background:#fcecea;border-color:#dfb2ad}.deadline-card.critical{background:#f8dfdc;border-color:#d49790}.deadline-card.overdue{background:#f4d8d5;border-color:#c77d74}.deadline-card .deadline-badge{background:#f2deda;color:#7d3e39}.deadline-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.deadline-title{font-size:18px;font-weight:900}.deadline-badge{font-size:11px;font-weight:850;background:#f1f2f5;border-radius:99px;padding:6px 9px;white-space:nowrap}.deadline-item{padding:12px 0;border-bottom:1px solid #eee}.deadline-item:last-child{border:0}.deadline-name{font-weight:850}.deadline-meta{font-size:12px;color:var(--muted);margin-top:4px}.deadline-empty{font-size:13px;color:var(--muted);padding-top:10px}.empty{text-align:center;color:#999;padding:16px}@media(orientation:portrait){
 #focusView.show.force-landscape{width:100vh;height:100vw;inset:auto;left:0;top:0;transform-origin:top left;transform:rotate(90deg) translateY(-100%)}
@@ -21,7 +21,7 @@
 .app > :not(.top):not(#newHome){display:none!important}
 #newHome{padding:22px 0 32px}
 .nh-welcome{padding:16px 2px 30px}.nh-eyebrow{font-size:11px;font-weight:900;letter-spacing:2.8px;color:#9297a3}
-.nh-today{display:flex;align-items:baseline;flex-wrap:nowrap;white-space:nowrap;gap:0;margin-top:12px;color:#202124;font-family:Arial,"Helvetica Neue",sans-serif;letter-spacing:-.035em}
+.nh-today{display:flex;align-items:baseline;flex-wrap:nowrap;white-space:nowrap;gap:0;margin-top:12px;color:#202124;font-family:"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif;letter-spacing:-.035em}
 .nh-date-number{font-size:clamp(33px,8vw,65px);font-weight:800;line-height:1.2;font-variant-numeric:tabular-nums}
 .nh-date-unit{font-size:clamp(16px,3.7vw,28px);font-weight:800;margin-right:.23em;letter-spacing:-.05em}
 .nh-date-week{font-size:clamp(21px,5vw,39px);font-weight:800;margin-left:.26em;letter-spacing:-.06em}
@@ -34,8 +34,8 @@
 .nh-info{min-width:0;flex:1}.nh-name{font-size:14px;font-weight:900;overflow-wrap:anywhere;line-height:1.5}.nh-meta{font-size:12px;color:#8c919b;margin-top:5px;line-height:1.5}
 .nh-empty{background:white;border-radius:18px;padding:22px 16px;color:#8c919b;font-size:13px;line-height:1.7}
 .nh-more{width:100%;border:0;border-radius:14px;background:#eef0f5;color:#565d70;font-weight:800;padding:13px;margin:-17px 0 24px;cursor:pointer}.nh-hint{font-size:12px;line-height:1.8;color:#8a8f99;background:#e9ecf3;border-radius:16px;padding:15px}
-</style></head><body><main class="app"><div class="top"><div class="brand">生活ナビ <span class="version">v0.37</span></div><button class="iconbtn" id="settingsBtn">⚙ 設定</button></div><section id="newHome" aria-label="生活ナビ ホーム">
-<div class="nh-welcome"><div class="nh-eyebrow">LIFE NAVI</div><div id="nhToday" class="nh-today"></div><h1>おかえり。</h1><p>大事なことだけ、忘れずに。</p></div>
+</style><style>.nh-overdue{background:#fff0f1!important;border:2px solid #e66d79!important}.nh-overdue .task-due{color:#c9213d!important;font-weight:900}.nh-weekly-toggle{display:flex;align-items:center;gap:10px;padding:11px 7px;border-bottom:1px solid #eee;font-size:13px;font-weight:650}.nh-weekly-toggle input{width:18px;height:18px;flex-shrink:0}.nh-weekly-help{font-size:12px;line-height:1.6;color:#737986;margin:5px 0 12px}.nh-priority.nh-overdue{border-color:#e66d79;background:#fff0f1!important}.nh-priority.nh-overdue .nh-meta{color:#c9213d;font-weight:800}</style></head><body><main class="app"><div class="top"><div class="brand">生活ナビ <span class="version">v0.37</span></div><button class="iconbtn" id="settingsBtn">⚙ 設定</button></div><section id="newHome" aria-label="生活ナビ ホーム">
+<div class="nh-welcome"><div class="nh-eyebrow">LIFE NAVI</div><div id="nhToday" class="nh-today"></div></div>
 <div class="nh-heading"><h2>📚 次の課題締切</h2><button id="nhPriorityAll" class="nh-link">課題一覧 →</button></div>
 <div id="nhPriority" class="nh-list"><div class="nh-empty">課題を確認中…</div></div>
 <div class="nh-heading"><h2>もうすぐのイベント</h2><button id="nhReload" class="nh-link">更新 ↻</button></div>
@@ -173,7 +173,7 @@ function currentItems(){return (week[selectedDate]||[]).filter(scheduleVisible)}
 function todayState(){let d=new Date(),s=d.getHours()*3600+d.getMinutes()*60+d.getSeconds(),today=keyOf(d),items=(week[today]||[]).filter(scheduleVisible);let active=items.find(x=>s>=sec(x.start)&&s<sec(x.end));let next=items.find(x=>sec(x.start)>s);return{d,s,today,items,active,next}}
 function state(){let t=todayState();return{...t,items:currentItems()}}
 function dueLabel(x,now=new Date()){if(!x.due)return x.note||'締切未確定';let d=new Date(x.due),ms=d-now;let ds=d.toLocaleString('ja-JP',{month:'numeric',day:'numeric',weekday:'short',hour:'2-digit',minute:'2-digit'});if(ms<0)return `期限超過 · ${ds}`;if(ms<=3*3600000)return `⚠ あと${Math.max(1,Math.ceil(ms/60000))}分 · ${ds}`;if(ms<=24*3600000)return `24時間以内 · ${ds}`;return ds}
-function pendingSorted(){return deadlines.filter(x=>!x.done).sort((a,b)=>{if(!a.due&&!b.due)return 0;if(!a.due)return 1;if(!b.due)return-1;return new Date(a.due)-new Date(b.due)})}
+function pendingSorted(){return taskPending().sort((a,b)=>{if(!a.due&&!b.due)return 0;if(!a.due)return 1;if(!b.due)return-1;return new Date(a.due)-new Date(b.due)})}
 function renderDeadlines(){let now=new Date(),pending=pendingSorted(),shown=pending.slice(0,1),card=$('deadlineCard');card.classList.remove('urgent','critical','overdue');let nearest=shown[0];if(nearest?.due){let ms=new Date(nearest.due)-now;if(ms<0)card.classList.add('overdue');else if(ms<=3*3600000)card.classList.add('critical');else if(ms<=24*3600000)card.classList.add('urgent')}$('deadlineCount').textContent=`未完了 ${pending.length}件`;$('deadlines').innerHTML='';if(!nearest){$('deadlines').innerHTML='<div class="deadline-empty">未完了の締切はありません 🎉</div>';return}let e=document.createElement('div');e.className='deadline-item';e.innerHTML=`<div class="deadline-name">${nearest.name}</div><div class="deadline-meta">${dueLabel(nearest,now)} <span class="deadline-place">📍 ${nearest.place||'未登録'}</span></div>`;$('deadlines').appendChild(e)}
 async function ensureSession(){
   if(!sbSession?.access_token)return false;
@@ -207,7 +207,76 @@ async function repairAssignmentDeadlines(rows){let changed=false;for(const r of 
 async function syncAssignments(seedIfEmpty=false){if(!sbSession?.access_token)return;let rows=await fetchAssignments();if(false&&seedIfEmpty&&rows.length===0){let r=await fetch(`${SUPABASE_URL}/rest/v1/life_navi_assignments`,{method:'POST',headers:authHeaders({'Prefer':'return=representation'}),body:JSON.stringify(assignmentSeedRows())});if(!r.ok)throw new Error('初回課題の保存に失敗 ('+r.status+')');rows=await r.json()}applyRemoteAssignments(rows)}
 async function setAssignmentCompleted(x,value){if(x.db_id&&sbSession?.access_token){try{let r=await fetch(`${SUPABASE_URL}/rest/v1/life_navi_assignments?id=eq.${encodeURIComponent(x.db_id)}`,{method:'PATCH',headers:authHeaders({'Prefer':'return=minimal'}),body:JSON.stringify({completed:value})});if(!r.ok)throw new Error('HTTP '+r.status);x.done=value;savedTaskDone[x.id]=value;localStorage.setItem('lifeNaviTaskDone',JSON.stringify(savedTaskDone));setSyncStatus('課題の完了状態を同期しました');renderDeadlines();renderAllTasks();render()}catch(e){setSyncStatus('課題の同期に失敗：'+e.message)}}else{x.done=value;savedTaskDone[x.id]=value;localStorage.setItem('lifeNaviTaskDone',JSON.stringify(savedTaskDone));renderDeadlines();renderAllTasks();render()}}
 function logoutSync(){sbSession=null;localStorage.removeItem('lifeNaviSupabaseSession');updateSyncUI()}
-function renderAllTasks(){let now=new Date(),pending=pendingSorted(),done=deadlines.filter(x=>x.done);let root=$('allTasks');root.innerHTML='';let addGroup=(title,items)=>{let h=document.createElement('div');h.className='tasks-subhead';h.textContent=`${title}（${items.length}）`;root.appendChild(h);if(!items.length){let z=document.createElement('div');z.className='task-empty';z.textContent='なし';root.appendChild(z);return}items.forEach(x=>{let e=document.createElement('div');e.className='task-card'+(x.done?' completed':'');e.innerHTML=`<div class="task-row"><div class="task-name">${x.name}</div><div class="task-due">${x.done?'完了済み':dueLabel(x,now)}</div></div><div class="task-meta">📍 ${x.place||'未登録'}${x.note?'　·　'+x.note:''}</div><button class="task-status ${x.done?'done':''}">${x.done?'✓ 完了済み':'✓ 完了にする'}</button>`;e.querySelector('button').onclick=()=>setAssignmentCompleted(x,!x.done);root.appendChild(e)})};addGroup('未完了',pending);addGroup('完了済み',done)}
+
+/* Weekly assignments are local-only overlays; existing Supabase records are not changed. */
+const WEEKLY_CONFIG_KEY='lifeNaviWeeklyConfigV042',WEEKLY_DONE_KEY='lifeNaviWeeklyDoneV042';
+let weeklyConfig=JSON.parse(localStorage.getItem(WEEKLY_CONFIG_KEY)||'null')||{};
+let weeklyDone=JSON.parse(localStorage.getItem(WEEKLY_DONE_KEY)||'{}');
+function saveWeekly(){localStorage.setItem(WEEKLY_CONFIG_KEY,JSON.stringify(weeklyConfig));localStorage.setItem(WEEKLY_DONE_KEY,JSON.stringify(weeklyDone))}
+function localDay(d){return keyOf(d)}
+function weeklyRows(){
+ const now=new Date(),today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+ const result=[];
+ for(const x of deadlines.filter(x=>weeklyConfig[x.id]&&x.due)){
+  const seed=new Date(x.due);if(isNaN(seed))continue;
+  // Iterate from the original due date; do not generate past weeks before the first deadline.
+  const start=new Date(seed);const weeks=Math.max(0,Math.floor((today-start)/604800000));
+  for(let k=Math.max(0,weeks-6);k<=weeks+1;k++){
+   const due=new Date(seed);due.setDate(seed.getDate()+7*k);
+   const day=localDay(due),completed=!!weeklyDone[x.id+':'+day];
+   // Completed weekly tasks stay visible until the next calendar day.
+   if(completed && today>new Date(due.getFullYear(),due.getMonth(),due.getDate()))continue;
+   if(due>today && k>weeks+1)continue;
+   // Retain all overdue, unsubmitted weeks from the initial date (even if older than 6 weeks).
+   result.push({...x,id:x.id+':'+day,baseId:x.id,due:`${localDay(due)}T${String(due.getHours()).padStart(2,'0')}:${String(due.getMinutes()).padStart(2,'0')}:00`,done:completed,weekly:true,weekDay:day});
+  }
+  if(weeks>6){
+   for(let k=0;k<weeks-6;k++){
+    const due=new Date(seed);due.setDate(seed.getDate()+7*k);
+    const day=localDay(due);
+    if(!weeklyDone[x.id+':'+day])result.push({...x,id:x.id+':'+day,baseId:x.id,due:`${localDay(due)}T${String(due.getHours()).padStart(2,'0')}:${String(due.getMinutes()).padStart(2,'0')}:00`,done:false,weekly:true,weekDay:day});
+   }
+  }
+ }
+ return result;
+}
+function taskRows(){return [...deadlines.filter(x=>!weeklyConfig[x.id]),...weeklyRows()]}
+function taskPending(){return taskRows().filter(x=>!x.done).sort((a,b)=>!a.due?1:!b.due?-1:new Date(a.due)-new Date(b.due))}
+function setWeeklyDone(x,value){
+ weeklyDone[x.baseId+':'+x.weekDay]=value;saveWeekly();
+ renderAllTasks();renderDeadlines();if(typeof tasks==='function')tasks();
+}
+function renderWeeklySettings(){
+ const panel=document.getElementById('weeklySettings');if(!panel)return;
+ panel.innerHTML='<div class="tasks-subhead">🔁 毎週繰り返す課題</div><div class="nh-weekly-help">ONにした課題は、設定済みの締切日時を基準に毎週繰り返します。完了済みなら締切翌日に切替、未提出なら赤く残ります。設定はこの端末に保存されます。</div>';
+ for(const x of deadlines){
+  const row=document.createElement('label');row.className='nh-weekly-toggle';
+  const checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.checked=!!weeklyConfig[x.id];checkbox.disabled=!x.due;
+  const name=document.createElement('span');name.textContent=x.name+(x.due?'':'（締切未設定）');
+  checkbox.onchange=()=>{weeklyConfig[x.id]=checkbox.checked;saveWeekly();renderAllTasks();renderDeadlines();if(typeof tasks==='function')tasks()};
+  row.append(checkbox,name);panel.append(row);
+ }
+}
+function renderAllTasks(){
+ let now=new Date(),pending=taskPending(),done=taskRows().filter(x=>x.done);
+ let root=$('allTasks');root.innerHTML='';
+ let settings=document.createElement('div');settings.id='weeklySettings';root.appendChild(settings);renderWeeklySettings();
+ let addGroup=(title,items)=>{
+  let h=document.createElement('div');h.className='tasks-subhead';h.textContent=`${title}（${items.length}）`;root.appendChild(h);
+  if(!items.length){let z=document.createElement('div');z.className='task-empty';z.textContent='なし';root.appendChild(z);return}
+  items.forEach(x=>{
+   let e=document.createElement('div');e.className='task-card'+(x.done?' completed':'')+(x.due&&new Date(x.due)<now&&!x.done?' nh-overdue':'');
+   let title=document.createElement('div');title.className='task-name';title.textContent=x.name+(x.weekly?' 🔁':'');
+   let due=document.createElement('div');due.className='task-due';due.textContent=x.done?'✓ 提出済み':dueLabel(x,now);
+   let line=document.createElement('div');line.className='task-row';line.append(title,due);
+   let meta=document.createElement('div');meta.className='task-meta';meta.textContent='📍 '+(x.place||'未登録')+(x.weekly?' ・ '+x.weekDay+'締切':'');
+   let button=document.createElement('button');button.className='task-status '+(x.done?'done':'');button.textContent=x.done?'✓ 提出済み（取り消す）':'✓ 提出済みにする';
+   button.onclick=()=>x.weekly?setWeeklyDone(x,!x.done):setAssignmentCompleted(x,!x.done);
+   e.append(line,meta,button);root.append(e);
+  })
+ };
+ addGroup('未提出',pending);addGroup('提出済み',done);
+}
 function render(){const liveToday=keyOf(new Date()),seen=localStorage.getItem('lifeNaviLastRealDate');if(seen!==liveToday){localStorage.setItem('lifeNaviLastRealDate',liveToday);{selectedDate=liveToday;localStorage.setItem('lifeNaviSelectedDate',liveToday)}}let{d,s,today,items}=state();let ts=todayState(),active=ts.active,next=ts.next,todayItems=ts.items;$('clock').textContent=`${d.getHours()}:${pad(d.getMinutes())}${showSeconds?':'+pad(d.getSeconds()):''}`;$('date').textContent=new Intl.DateTimeFormat('ja-JP',{month:'long',day:'numeric',weekday:'long'}).format(d);let isToday=selectedDate===today;$('dayTitle').textContent=isToday?'今日の予定':`${new Date(selectedDate+'T00:00:00').toLocaleDateString('ja-JP',{month:'numeric',day:'numeric',weekday:'short'})}の予定`;$('dayHint').textContent=isToday?'': '週間予定から選択中';
 if(active){let left=sec(active.end)-s;$('countLabel').textContent='終了まで';$('countdown').innerHTML=left<60?`<span class="count-small">あと</span><span class="count-seconds">${pad(Math.floor(left/60))}:${pad(left%60)}</span>`:`<span class="count-small">あと</span><span class="count-number">${Math.ceil(left/60)}</span><span class="count-small">分</span>`;$('nowTitle').textContent=active.name;$('nowSub').textContent=`${displayTime(active.start)} – ${displayTime(active.end)}`;$('bar').style.width=Math.min(100,(s-sec(active.start))/(sec(active.end)-sec(active.start))*100)+'%'}else if(next){let left=sec(next.start)-s;$('countLabel').textContent='次の予定まで';$('countdown').innerHTML=left<60?`<span class="count-small">あと</span><span class="count-seconds">${pad(Math.floor(left/60))}:${pad(left%60)}</span>`:`<span class="count-small">あと</span><span class="count-number">${Math.ceil(left/60)}</span><span class="count-small">分</span>`;$('nowTitle').textContent='自由時間';$('nowSub').textContent=`次は ${displayTime(next.start)} ${next.name}`;$('bar').style.width='0'}else{$('countLabel').textContent='今日の予定';$('countdown').textContent='なし';$('nowTitle').textContent='おつかれさま！';$('nowSub').textContent=todayItems.length?'今日の予定は全部終了':'今日は予定なし';$('bar').style.width='0'}
 $('list').innerHTML='';let visible=items.filter(x=>!isToday||sec(x.end)>s);visible.forEach((x,i)=>{let e=document.createElement('div');e.className='item';e.innerHTML=`<div class="it">${displayTime(x.start)}</div><div><div class="in">${x.name}</div></div><button class="check" aria-label="予定完了">✓</button>`;e.querySelector('button').onclick=()=>setScheduleCompleted(x,!x.completed);$('list').appendChild(e)});
@@ -224,7 +293,11 @@ function notifyPermissionText(){if(!('Notification' in window))return 'このブ
 function renderNotifySettings(){let st=$('notifyStatus');if(st)st.textContent=notifyPermissionText()+`　予定 ${notifySettings.schedule.map(x=>x+'分前').join('・')} / 課題 ${notifySettings.task.map(x=>x>=1440?(x/1440)+'日前':x>=60?(x/60)+'時間前':x+'分前').join('・')}`;document.querySelectorAll('[data-task-min]').forEach(b=>b.classList.toggle('on',notifySettings.task.includes(Number(b.dataset.taskMin))))}
 async function showLifeNotification(title,body,tag){if(!('Notification' in window)||Notification.permission!=='granted')return;try{let reg=await navigator.serviceWorker?.ready;if(reg)await reg.showNotification(title,{body,tag,renotify:false,icon:'./icon-192.png'});else new Notification(title,{body,tag})}catch(e){try{new Notification(title,{body,tag})}catch(_){}}}
 function scheduleDate(date,time){let [y,m,d]=date.split('-').map(Number),[h,mi]=time.split(':').map(Number);return new Date(y,m-1,d,h,mi,0,0)}
-function checkNotifications(){if(!('Notification' in window)||Notification.permission!=='granted')return;let now=Date.now(),windowMs=65000,today=keyOf(new Date());for(let x of (week[today]||[]).filter(scheduleVisible)){let target=scheduleDate(today,x.start).getTime();for(let mins of notifySettings.schedule){let at=target-mins*60000,key=`s:${today}:${x.start}:${x.name}:${mins}`;if(now>=at&&now<at+windowMs&&!notified[key]){notified[key]=Date.now();showLifeNotification('⏰ '+x.name,mins===0?'予定の開始時刻です':`開始まであと${mins>=60?(mins/60)+'時間':mins+'分'}です`,key)}}}for(let x of deadlines.filter(a=>!a.done&&a.due)){let target=new Date(x.due).getTime();for(let mins of notifySettings.task){let at=target-mins*60000,key=`t:${x.id}:${target}:${mins}`;if(now>=at&&now<at+windowMs&&!notified[key]){notified[key]=Date.now();showLifeNotification('📌 '+x.name,`期限まであと${mins>=1440?(mins/1440)+'日':mins>=60?(mins/60)+'時間':mins+'分'}です`,key)}}}localStorage.setItem(NOTIFIED_KEY,JSON.stringify(notified));let cutoff=Date.now()-14*86400000;for(let k in notified)if(notified[k]<cutoff)delete notified[k]}
+function checkNotifications(){if(!('Notification' in window)||Notification.permission!=='granted')return;let now=Date.now(),windowMs=65000,today=keyOf(new Date());for(let x of (week[today]||[]).filter(scheduleVisible)){let target=scheduleDate(today,x.start).getTime();for(let mins of notifySettings.schedule){let at=target-mins*60000,key=`s:${today}:${x.start}:${x.name}:${mins}`;if(now>=at&&now<at+windowMs&&!notified[key]){notified[key]=Date.now();showLifeNotification('⏰ '+x.name,mins===0?'予定の開始時刻です':`開始まであと${mins>=60?(mins/60)+'時間':mins+'分'}です`,key)}}}for(let x of taskPending().filter(a=>a.due)){let target=new Date(x.due).getTime();for(let mins of notifySettings.task){let at=target-mins*60000,key=`t:${x.id}:${target}:${mins}`;if(now>=at&&now<at+windowMs&&!notified[key]){notified[key]=Date.now();showLifeNotification('📌 '+x.name,`期限まであと${mins>=1440?(mins/1440)+'日':mins>=60?(mins/60)+'時間':mins+'分'}です`,key)}}}for(let x of taskPending().filter(a=>a.weekly&&a.due&&new Date(a.due).getTime()<now)){
+ let dt=new Date(x.due),morning=new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+1,9,0).getTime();
+ let key='overdue:'+x.id;
+ if(now>=morning&&now<morning+windowMs&&!notified[key]){notified[key]=Date.now();showLifeNotification('🚨 未提出の課題があります',x.name+'：提出期限を過ぎています',key)}
+}localStorage.setItem(NOTIFIED_KEY,JSON.stringify(notified));let cutoff=Date.now()-14*86400000;for(let k in notified)if(notified[k]<cutoff)delete notified[k]}
 $('requestNotify').onclick=async()=>{if(!('Notification' in window)){renderNotifySettings();return}let p=await Notification.requestPermission();renderNotifySettings();if(p==='granted')showLifeNotification('🔔 生活ナビ','通知をオンにしました！','life-navi-test')};
 $('addTaskNotify').onclick=()=>{let m=notifyMinutes($('taskNotifyValue').value,$('taskNotifyUnit').value);if(!notifySettings.task.includes(m))notifySettings.task.push(m);notifySettings.task.sort((a,b)=>b-a);saveNotify()};
 $('scheduleNotifyValue').onchange=()=>{let m=notifyMinutes($('scheduleNotifyValue').value,$('scheduleNotifyUnit').value);notifySettings.schedule=[m];saveNotify()};$('scheduleNotifyUnit').onchange=$('scheduleNotifyValue').onchange;
@@ -322,15 +395,15 @@ function tasks(){
  const now=new Date();
  const year=now.getFullYear(),month=now.getMonth()+1,day=now.getDate(),weekday=['日','月','火','水','木','金','土'][now.getDay()];
  document.getElementById('nhToday').innerHTML=`<span class="nh-date-number">${year}</span><span class="nh-date-unit">年</span><span class="nh-date-number">${month}</span><span class="nh-date-unit">月</span><span class="nh-date-number">${day}</span><span class="nh-date-unit">日</span><span class="nh-date-week">（${weekday}）</span>`;
- const all=(typeof deadlines!=='undefined'?deadlines:[]).filter(x=>!x.done&&x.due&&!Number.isNaN(new Date(x.due).getTime())).sort((a,b)=>new Date(a.due)-new Date(b.due));
+ const all=taskPending().filter(x=>x.due&&!Number.isNaN(new Date(x.due).getTime()));
  const upcoming=all.filter(x=>new Date(x.due)>=now);
- const nearest=upcoming[0]||all[all.length-1];
+ const overdue=all.filter(x=>new Date(x.due)<now);const nearest=overdue[0]||upcoming[0];
  if(nearest){
   const dt=new Date(nearest.due),f=fmtDate(keyOf(dt)),overdue=dt<now;
   const meta=(overdue?'期限超過 ・ ':'')+dt.toLocaleString('ja-JP',{month:'long',day:'numeric',weekday:'short',hour:'2-digit',minute:'2-digit'})+' 締切'+(nearest.place?' ・ '+nearest.place:'');
-  priority.innerHTML='<article class="nh-card nh-priority"><div class="nh-day"><small>'+f.month+'月</small><strong>'+f.day+'</strong></div><div class="nh-info"><div class="nh-name">'+safe(nearest.name)+'</div><div class="nh-meta">'+safe(meta)+'</div></div></article>';
+  priority.innerHTML='<article class="nh-card nh-priority'+(overdue?' nh-overdue':'')+'"><div class="nh-day"><small>'+f.month+'月</small><strong>'+f.day+'</strong></div><div class="nh-info"><div class="nh-name">'+safe(nearest.name)+'</div><div class="nh-meta">'+safe(meta)+'</div></div></article>';
  }else{priority.innerHTML='<div class="nh-empty">締切が設定された未完了課題はありません。</div>'}
- const rest=upcoming.slice(1,4);
+ const rest=all.filter(x=>x!==nearest).slice(0,3);
  d.innerHTML=rest.length?rest.map(x=>{const dt=new Date(x.due);return card(x.name,keyOf(dt),dt.toLocaleString('ja-JP',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})+' 締切')}).join(''):'<div class="nh-empty">そのほかの直近の締切はありません。</div>';
 }
 document.getElementById('nhReload').onclick=()=>{events();tasks()};
